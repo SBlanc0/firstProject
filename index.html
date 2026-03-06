@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Digital - Cartelera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<center> <header>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 20px; justify-content: center; padding: 0;">
+            <li><a href="#">Cartelera</a></li>
+            <li><a href="#estrenos">Próximos Estrenos</a></li>
+            <li><a href="#reserva">Reservar Entradas</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <!-- Seccion de inicio -->
+        <section id="inicio">
+            <h1>Cine Estrella</h1>
+            <p>Disfruta de la mejor experiencia del cine con la mejor tecnología.</p>
+        </section>
+
+        <hr width="80%">
+        <!-- Seccion de estrenos -->
+        <section id="estrenos">
+            <h2>Película Destacada</h2>
+            <img src="rick-astley.jpg" alt="Póster de película" width="350" height="350">
+            <h3>Título: Never Gonna Give You Up</h3>
+        </section>
+
+        <hr width="80%">
+        <!-- Seccion de horarios -->
+        <section id="horarios">
+            <h2>Horarios y Formatos</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <caption>Disponibilidad para hoy</caption>
+                <thead>
+                <tr>
+                    <th>Sala</th>
+                    <th>Idioma</th>
+                    <th>Horario</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Sala 1 (2D)</td>
+                    <td>Subtitulada</td>
+                    <td>15:00 - 18:30</td>
+                </tr>
+                <tr>
+                    <td>Sala 4 (IMAX)</td>
+                    <td>Doblada</td>
+                    <td>20:00 - 22:30</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr width="80%">
+        <!-- Seccion de trailer -->
+        <section id="trailer">
+            <h2>Ver Trailer</h2>
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Trailer de la película"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <hr width="80%">
+        <!-- Seccion de reserva -->
+        <section id="reserva">
+            <h2>Reserva tus Boletos</h2>
+            <form action="#" method="POST">
+                <label for="cliente">Nombre Completo:</label><br>
+                <input type="text" id="cliente" name="cliente" required placeholder="Escribe tu nombre"><br><br>
+
+                <label for="cantidad">Número de Boletos:</label><br>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10"><br><br>
+
+                <label for="tipo">Tipo de Entrada:</label><br>
+                <select id="tipo" name="tipo">
+                    <option value="adulto">Adulto</option>
+                    <option value="niño">Niño / Adulto Mayor</option>
+                </select><br><br>
+
+                <button type="submit" onclick="alert('Iniciando proceso de reserva...')">Confirmar Reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-top: 40px;">
+        <p>&copy; 2026 Cine Digital S.A. - Todos los derechos reservados.</p>
+    </footer>
+
+</center> <script src="main.js"></script>
+</body>
+</html>

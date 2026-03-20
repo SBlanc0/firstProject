@@ -1,0 +1,200 @@
+/* ── Reset basico ── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 20px 32px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #2a2a4a;
+    color: #fff;
+}
+
+/* ── Main ── */
+main {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #1a1a2e;
+    padding-left: 10px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+/* ── Grid de peliculas ── */
+.grid-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card-pelicula {
+    width: 260px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.card-pelicula img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 14px;
+}
+
+.card-info h3 {
+    font-size: 1rem;
+    margin: 8px 0 4px;
+}
+
+.card-info p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+/* ── Botones ── */
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2e2e5e;
+}
+
+/* ── Estrenos ── */
+.card-estreno {
+    border-left: 4px solid #1a1a2e;
+    padding: 10px 16px;
+    margin: 8px 0;
+    background: #fff;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ── Chips de genero ── */
+.genero-chip {
+    display: inline-block;
+    border: 1px solid #1a1a2e;
+    padding: 4px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+}
+
+/* ── Tabla horarios ── */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 11px 14px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* ── Formulario reserva ── */
+.form-reserva {
+    max-width: 480px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-reserva p {
+    margin-bottom: 14px;
+}
+
+.form-reserva label {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.form-reserva input,
+.form-reserva select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}

@@ -1,4 +1,4 @@
-// ── 1. DATOS ─────────────────────────────────────────────────
+// ── 1. DATOS
 
 // Array con los nombres internos de las 4 secciones
 const secciones = ['cartelera', 'estrenos', 'horarios', 'reserva'];
